@@ -27,10 +27,13 @@ Think about how a computer knows the user wants to submit the form? Pause, stop 
 * If you use `console.log()` to print "the form was submitted", does it work?
 * Once the form is submitted use `.val()` to save the user's `name` and `message` in variables.
 * `console.log` your variable to make sure you are saving them correctly.
-* Finally, `append()` the HTML with the `name` and `message` values you just saved. 
+* Now, `append()` the HTML for an individual message so that your message appears on the Message Board with the `name` and `message` values you just saved. 
 
 
 #### Fancy things up a bit:
 * If the appended messages don't look as good as the default ones you created in the beginning, try adding the same classes onto the HTML you're appending. 
 * Notice how your form doesn't clear itself after submit? Use `.val()` to clear the input and textarea. [hint GOOGLE!](http://lmgtfy.com/?q=how+to+use+val()+to+clear+an+input)
-* Done with everything else? See if you can add the current time the message was posted. Help with adding the time can be found [here](https://www.codexworld.com/how-to/get-current-date-time-using-javascript/). 
+* Let's update the message counter every time a new message is submitted! Right after you append the new message to the Message Board, create a variable called `msgCount` and set it to the `text()` of the `span` tag in the HTML that holds the count. `console.log` that value to make sure it prints 3.  
+* Your `msgCount` variable is currently a string. Use Google to figure out how to convert a string to an integer in JavaScript. Convert your `msgCount` variable into an integer. 
+* Set the `text()` of your `message-count` span to the correct message count. Make sure it works for adding multiple messages. 
+* Done with everything else? See if you can add the current time the message was posted. Help with adding the time can be found [here](https://www.codexworld.com/how-to/get-current-date-time-using-javascript/).  
